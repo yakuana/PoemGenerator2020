@@ -24,7 +24,7 @@ export const getWheatleyData = () => dispatch => {
         .get('https://poetrydb.org/author/Phillis%20Wheatley')
         .then(response => {
             // successful 
-            console.log("DUNBAR response data", response.data)
+            console.log("WHEATLEY response data", response.data)
 
             dispatch({ type: FETCH_WHEATLEY_POEM_DATA_SUCCESS, payload: response.data})
         })
@@ -57,7 +57,7 @@ export const getHammonData = () => dispatch => {
     dispatch({ type: FETCH_HAMMON_POEM_DATA_START}); 
 
     axios 
-        .get('https://poetrydb.org/author/')
+        .get('https://poetrydb.org/author/Jupiter%20Hammon')
         .then(response => {
             // successful 
             console.log("HAMMON response data", response.data)
