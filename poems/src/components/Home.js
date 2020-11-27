@@ -10,7 +10,6 @@ const Home = (props) => {
         props.getWheatleyData() 
         props.getHammonData() 
         props.getDunbarData()
-        console.log(props)
     }, []) 
     
     return (
